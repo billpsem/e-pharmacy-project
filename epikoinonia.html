@@ -153,32 +153,32 @@
             <input type="hidden" name="access_key" value="0c2eb960-ecdb-456c-a1e7-89cae510b30c">  <!-- Αλλαζοντας το value με το προσωπικο σας id τα μηνυματα ερχονται στο email σας. Τωρα ερχονται στο δικο μου.-->
             <div class="form-group">
               <label for="onoma">Όνομα</label>
-              <input type="text" name="First Name" class="form-control" id="onoma" required>
+              <input type="text" name="First Name" class="form-control" id="onoma" onfocus="makeGreen(this)" onblur="makeWhite(this)" required>
             </div>
 
             <div class="form-group">
               <label for="eponymo">Επώνυμο</label>
-              <input type="text" name="Last Name" class="form-control" id="eponymo" required>
+              <input type="text" name="Last Name" class="form-control" id="eponymo" onfocus="makeGreen(this)" onblur="makeWhite(this)" required>
             </div>
 
             <div class="form-group">
               <label for="ilikia">Ηλικία</label>
-              <input type="number" name="Age" class="form-control" id="ilikia" required>
+              <input type="number" name="Age" class="form-control" id="ilikia" onfocus="makeGreen(this)" onblur="makeWhite(this)" required>
             </div>
 
             <div class="form-group">
               <label for="tilefono">Τηλέφωνο</label>
-              <input type="text" name="Phone Number" class="form-control" id="tilefono" required>
+              <input type="text" name="Phone Number" class="form-control" id="tilefono" onfocus="makeGreen(this)" onblur="makeWhite(this)" required>
             </div>
 
             <div class="form-group">
               <label for="email">Email</label>
-              <input type="email" name="Email" class="form-control" id="email" required>
+              <input type="email" name="Email" class="form-control" id="email" onfocus="makeGreen(this)" onblur="makeWhite(this)" required>
             </div>
 
             <div class="form-group">
               <label for="logos">Λόγος επικοινωνίας</label>
-              <select name="Reason" class="form-control" id="logos" required>
+              <select name="Reason" class="form-control" id="logos" onfocus="makeGreen(this)" onblur="makeWhite(this)" required>
                 <option>Σχόλιο</option>
                 <option>Ερώτηση</option>
                 <option>Παράπονο</option>
@@ -188,7 +188,7 @@
 
             <div class="form-group">
               <label for="minyma">Μήνυμα</label>
-              <textarea name="message" class="form-control" id="minyma" rows="5" required></textarea>
+              <textarea name="message" class="form-control" id="minyma" rows="5" onfocus="makeGreen(this)" onblur="makeWhite(this)" required></textarea>
             </div>
 
             <button type="submit" class="btn btn-success">Υποβολή</button>
@@ -271,19 +271,15 @@
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
     <script>
-      const fields = document.querySelectorAll(".form-control");
-
-      fields.forEach(function(field) {
-        field.addEventListener("focus", function() {
-          field.style.backgroundColor = "lightgreen";
-        });
-        field.addEventListener("blur", function() {
-          field.style.backgroundColor = "";
-        });
-      });
+      function makeGreen(x) {
+        x.style.background = "lightgreen";
+      }
+      function makeWhite(x) {
+        x.style.background = "white";
+      }
       function sendMessage() {
-        const onoma = document.getElementById("onoma").value;
-        const eponymo = document.getElementById("eponymo").value;
+        var onoma = document.getElementById("onoma").value;
+        var eponymo = document.getElementById("eponymo").value;
 
         alert("Ευχαριστούμε για το μήνυμα " + onoma + " " + eponymo);
       }
