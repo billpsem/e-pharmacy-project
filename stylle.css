@@ -1,0 +1,266 @@
+/* Body CSS */
+
+body {
+    background: #f4f9f6;
+    font-family: Arial, sans-serif;
+}
+
+h2, h3, h5 {
+    color: #188a4b;
+    font-weight: bold;
+}
+
+.top-title {
+    text-align: center;
+    padding: 20px;
+    background: linear-gradient(90deg, #dff5e8, #ffffff);
+}
+
+.container-fluid {
+    margin-top: 25px;
+}
+
+.col-md-9 {
+    padding: 20px;
+}
+
+/* --------------------------Body End---------------------------- *
+
+
+/* Lists CSS */
+
+.list-group-item {
+    border: none;
+    border-bottom: 1px solid #e8e8e8;
+}
+
+.list-group-item a {
+    color: #333;
+    text-decoration: none;
+}
+
+.list-group-item:hover {
+    background-color: #e8f8ef;
+}
+
+.list-group-item i {
+    transition: .3s;
+}
+
+.list-group-item:hover i {
+    transform: translateX(5px);
+    color: #188a4b;
+}
+
+/* --------------------------Lists End---------------------------- */
+
+
+/* Cards CSS */
+
+.card {
+    border: none;
+    border-radius: 18px;
+    box-shadow: 0 4px 14px rgba(0,0,0,0.12);
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card-img-top {
+    height: 220px;
+    object-fit: contain;
+    padding: 15px;
+    background: #ffffff;
+}
+
+.btn-success {
+    border-radius: 25px;
+    padding: 8px 22px;
+    background-color: #188a4b;
+}
+
+.btn-search {
+    color: white;
+    background-color: #188a4b;
+}
+
+/* -------------------------Cards End----------------------------- */
+
+
+/* Designs CSS */
+
+.border-bar {
+    border-bottom: 2px solid rgba(128, 128, 128, 0.15);
+}
+
+.border-bar-top {
+    border-top: 2px solid rgba(128, 128, 128, 0.15);
+}
+
+.active-border {
+    border-bottom: 2px solid #188a4b91;
+}
+
+.active-page {
+    color: #188a4b !important;
+}
+
+.bold-letter {
+    font-weight: bold;
+}
+
+/* -------------------------Designs End----------------------------- */
+
+
+/* Categories CSS */
+
+.category-box{
+    background:#fff;
+    border-radius:15px;
+    box-shadow:0 3px 12px rgba(0,0,0,.08);
+    padding:20px;
+}
+
+.category-box h5{
+    color:#188a4b;
+    font-weight:700;
+    margin-bottom:10px;
+}
+
+.category-link{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:12px 0;
+    color:#333;
+    text-decoration:none;
+    border-bottom:1px solid #ececec;
+    transition:.3s;
+}
+
+.category-link:hover{
+    color:#188a4b;
+    padding-left:10px;
+    text-decoration:none;
+}
+
+.category-link i{
+    transition:.3s;
+}
+
+.category-link:hover i{
+    transform:translateX(5px);
+}
+
+/* -------------------------Categories End----------------------------- */
+
+
+/* Boostrap CSS */
+
+.page-link {
+    color:white;
+    background-color: #0c572e;
+}
+
+.page-link:hover {
+    color: white;
+    background-color: #188a4b;
+}
+
+.page-link:focus {
+    color: white;
+    background-color: #126839;
+}
+
+.page-link:focus {
+  z-index: 3;
+  outline: 0;
+  box-shadow: 0 0 0 0.2rem rgba(0, 255, 64, 0.25);
+}
+
+.page-item.active .page-link {
+  z-index: 3;
+  color: #fff;
+  background-color: #188a4b;
+  border-color: #44b152;
+}
+
+/* --------------------------Boostrap End---------------------------- */
+
+
+
+/* Footer CSS */
+
+footer {
+    background: #126839;
+    margin-top: 40px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+footer a {
+    color: white !important;
+}
+
+footer .nav-link:hover {
+    text-decoration: underline;
+}
+
+.footer-links {
+    border-right: 1px solid rgba(255,255,255,0.3);
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.footer-links2 {
+    border-left: 1px solid rgba(255,255,255,0.3);
+}
+
+.last-footer {
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.footer2 {
+    background-color: #0c572e;
+}
+
+.social-icons {
+    margin-top: 20px;
+}
+
+.social-icons a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 42px;
+    height: 42px;
+    margin-right: 12px;
+    border-radius: 50%;
+    background: rgba(255,255,255,0.15);
+    font-size: 22px;
+}
+
+/* --------------------------Footer End---------------------------- */
+
+
+
+
+/* Not in use CSS */
+
+
+/* .col-md-3 {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 3px 12px rgba(0,0,0,0.08);
+} */
+
+/* .navbar {
+    box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+} */
+
+
+/* ------------------------------------------------------ */
